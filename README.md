@@ -1,13 +1,3 @@
----
-duration: PT0H30M0S
-description: Learn how to consume OCI Streaming topic behind an API Gateway using OCI REST API
-level: Intermediate
-roles: Solution Architect;Developer
-lab-id:
-products: en/cloud/oracle-cloud-infrastructure/oci;
-keywords: OCI-CLI, OCIStreaming, Kafka, APIGateway
-inject-note: true
----
 
 # Consuming OCI Streaming topic behind an API Gateway using OCI REST API
 
