@@ -88,7 +88,7 @@ Go to your Streaming page, and click on **Produce Test Message**:
   ![T4_0](images/task4_0_produce_2.png "T4_0")
   
 
-## Task 5: Consuming OCI Streaming via REST API bethind the API Gateway  
+## Task 5: Consuming OCI Streaming via REST API behind the API Gateway  
 
    1. Download the sample python consume code [consume_rest_api_oci_lab.py](./files/consume_rest_api_oci_lab.py)
 
