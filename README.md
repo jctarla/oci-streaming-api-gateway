@@ -1,10 +1,12 @@
 
-# Consuming OCI Streaming topic behind an API Gateway using OCI REST API
+# Consuming private OCI Streaming topic behind an API Gateway using OCI REST API
 
 
 ## Introduction
 
-The Oracle Cloud Infrastructure Streaming service provides a fully managed, scalable, and durable solution for ingesting and consuming high-volume data streams in real-time. Use Streaming for any use case in which data is produced and processed continually and sequentially in a publish-subscribe messaging model.
+The Oracle Cloud Infrastructure Streaming service provides a fully managed, scalable, and durable solution for ingesting and consuming high-volume data streams in real-time. Use Streaming for any use case in which data is produced and processed continually and sequentially in a publish-subscribe messaging model.  
+In this scenario, we need to expose and consume a **private** OCI Streaming topic using a **public** **API Gateway** to control and secure the access.
+
 
 ### Objective  
 
@@ -13,10 +15,11 @@ This tutorial demonstrates how to consume OCI Streaming topic using API Gateway 
 ### Prerequisites
 
 * Provide the following:  
-   - Oracle account with proper access permissions
+   - Oracle account with admin level access permissions
    - A compartment to create your resources
    - Local OCI-CLI setup, if you need help, check the [Installing the CLI tutorial](https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/cliinstall.htm)
    - VCN with two subnets (Private & Public), check the [Creating Network tutorial](https://docs.oracle.com/en-us/iaas/Content/GSG/Tasks/creatingnetwork.htm)
+   - Make sure your subnets has proper Ingress Rules for Service Gateway and port 443 for both private & public subnets.
    - OCI Streaming topic [Creating OCI Stream tutorial](https://docs.oracle.com/en-us/iaas/Content/Streaming/Tasks/creatingstreamsandstreampools_create-stream.htm)
    - Local Python version 3 installed for testing
 
